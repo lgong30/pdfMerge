@@ -17,7 +17,7 @@ Usage
 -----
 
 ```shell
-git clone 
+git clone https://github.com/lgong30/pdfMerge.git
 cd pdfMerge
 python ./pdfMerge.py
 ```
