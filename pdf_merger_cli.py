@@ -57,6 +57,7 @@ def merge_pdfs(pdfs, outline_filename='outline.txt', outname='document-merged.pd
             with open(outline_filename, 'w') as fp:
                 fp.write(content)
 
+
 def helper(arguments):
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--directory', type=str, action='store', help='where to fetch files (default: current)', default=os.path.realpath(__file__))
@@ -68,7 +69,7 @@ def helper(arguments):
 
 
 if __name__ == '__main__':
-    args = helper(sys.argv)
+    args = helper(sys.argv[1:])
     pdfs = get_files(path=args.directory, max_depth=args.depth, ext_filter=('.pdf'))
     merge_pdfs(pdfs=pdfs, outname=args.output)
 
