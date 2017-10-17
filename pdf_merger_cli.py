@@ -7,7 +7,7 @@ import sys
 import argparse
 
 
-def get_files(path='.', max_depth=2, ext_filter=('.*')):
+def get_files(path='.', max_depth=2, ext_filter=('.*',)):
     """Get files from path"""
     full_path = os.path.abspath(path)
     depth = 0
@@ -71,7 +71,7 @@ def helper(arguments):
 
 if __name__ == '__main__':
     args = helper(sys.argv[1:])
-    pdfs = get_files(path=args.directory, max_depth=args.depth, ext_filter=('.pdf'))
+    pdfs = get_files(path=args.directory, max_depth=args.depth, ext_filter=('.pdf',))
     merge_pdfs(pdfs=pdfs, outname=args.output)
 
 
