@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d12767ca-2f31-4b4e-96a6-5bb7e9a2f3f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pdf_merger_cli.py" afterPath="$PROJECT_DIR$/pdf_merger_cli.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,10 +29,10 @@
       <file leaf-file-name="pdf_merger_cli.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pdf_merger_cli.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+            <state relative-caret-position="286">
+              <caret line="53" column="71" lean-forward="false" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
               <folding>
-                <element signature="e#23#85#0" expanded="true" />
+                <element signature="e#23#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,10 +199,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pdf_merger_cli.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+        <state relative-caret-position="286">
+          <caret line="53" column="71" lean-forward="false" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
           <folding>
-            <element signature="e#23#85#0" expanded="true" />
+            <element signature="e#23#70#0" expanded="true" />
           </folding>
         </state>
       </provider>

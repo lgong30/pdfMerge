@@ -1,6 +1,6 @@
 #! /usr/bin/python2.7
 
-from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
+from PyPDF2 import PdfFileMerger, PdfFileReader
 import os
 import os.path
 import sys
@@ -50,7 +50,11 @@ def merge_pdfs(pdfs, outline_filename='outline.txt', outname='document-merged.pd
         # return open(filename, 'r')
         merger = PdfFileMerger()
         for f in pdfs:
-            merger.append(PdfFileReader(file(f, 'rb')))
+            try:
+                merger.append(PdfFileReader(open(f, 'rb'), strict=False))
+            except:
+                print ('reading %s failed ...' % f)
+                continue
             name = get_student_name(f)
             content += name + ' ' + '-'*10 + ' ' + str(page_num) + '\n'
 
