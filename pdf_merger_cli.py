@@ -64,8 +64,7 @@ def helper(arguments):
     parser.add_argument('-D', '--depth',type=int, action='store', help='maximum depth to fetch (default: 4)', default=4)
     parser.add_argument('-o', '--output', type=str, action='store', help='output filename (default: merged.pdf)', default='merged.pdf')
 
-    parser.parse_args(arguments)
-    return parser
+    return parser.parse_args(arguments)
 
 
 if __name__ == '__main__':
