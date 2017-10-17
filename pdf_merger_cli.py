@@ -24,11 +24,12 @@ def dive_into_path(path, ext_filter, depth, max_depth):
         if f.startswith('.'):
             # ignore hidden files and folders and . and ..
             continue
-        if os.path.isfile(f):
+        fullf = os.path.join(path,f)
+        if os.path.isfile(fullf):
             if ('.*' in ext_filter) or (os.path.splitext(f)[-1] in ext_filter):
-                file_list.append(os.path.join(path, f))
+                file_list.append(fullf)
         else:
-            file_list += dive_into_path(os.path.join(path, f), ext_filter, depth + 1, max_depth)
+            file_list += dive_into_path(fullf, ext_filter, depth + 1, max_depth)
     return file_list
 
 
