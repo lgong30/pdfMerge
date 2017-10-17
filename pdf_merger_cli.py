@@ -57,6 +57,7 @@ def merge_pdfs(pdfs, outline_filename='outline.txt', outname='document-merged.pd
                 continue
             name = get_student_name(f)
             content += name + ' ' + '-'*10 + ' ' + str(page_num) + '\n'
+            page_num += PdfFileReader(open(f, 'rb'), strict=False).getNumPages()
 
         merger.write(outname)
         if outline_filename is not None:
