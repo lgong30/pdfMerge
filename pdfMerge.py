@@ -9,6 +9,7 @@ from PyPDF2 import PdfFileMerger, PdfFileReader
 import os
 import os.path
 
+
 class PDFMergerGUI(Tkinter.Frame):
 
     def __init__(self, root):
@@ -70,7 +71,6 @@ class PDFMergerGUI(Tkinter.Frame):
 
         # get filename
         return tkFileDialog.asksaveasfilename(**self.file_opt)
-
 
 
     def askdirectory(self):
